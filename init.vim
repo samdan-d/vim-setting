@@ -8,7 +8,7 @@ Plug 'tpope/vim-eunuch'
 Plug 'scrooloose/nerdtree'
 Plug 'pangloss/vim-javascript'
 Plug 'mhinz/vim-startify'
-Plug 'Valloric/YouCompleteMe', { 'do': './install.py --clang-completer --tern-completer --cs-completer --go-completer' }
+Plug 'Valloric/YouCompleteMe', { 'do': './install.py --clang-completer --js-completer --cs-completer --go-completer' }
 
 call plug#end()
 filetype plugin indent on
@@ -115,3 +115,5 @@ nmap <Leader>hu <Plug>GitGutterUndoHunk
 " YouAutoComplete: config
 set completeopt-=preview
 let g:ycm_add_preview_to_completeopt = 0
+" SET global c++
+let g:ycm_global_ycm_extra_conf = '/home/samdan/.config/nvim/.ycm_extra_conf.py'
